@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-border: hsl(0 0% 18%);
+  --color-input: hsl(0 0% 18%);
+  --color-ring: hsl(40 70% 50%);
+  --color-background: hsl(0 0% 5%);
+  --color-foreground: hsl(0 0% 95%);
+
+  --color-card: hsl(0 0% 8%);
+  --color-card-foreground: hsl(0 0% 95%);
+
+  --color-primary: hsl(0 0% 100%);
+  --color-primary-foreground: hsl(0 0% 5%);
+
+  --color-secondary: hsl(0 0% 12%);
+  --color-secondary-foreground: hsl(0 0% 85%);
+
+  --color-muted: hsl(0 0% 15%);
+  --color-muted-foreground: hsl(0 0% 55%);
+
+  --color-accent: hsl(40 70% 50%);
+  --color-accent-foreground: hsl(0 0% 5%);
+
+  --color-destructive: hsl(0 84.2% 60.2%);
+
+  --color-gold: hsl(40 70% 50%);
+  --color-gold-light: hsl(40 60% 65%);
+  --color-gold-dark: hsl(40 80% 35%);
+
+  --radius: 0rem;
+}
+
+/* CSS custom properties for hsl() usage in gradients */
+:root {
+  --bg-5: 0 0% 5%;
+  --gold-hsl: 40 70% 50%;
+}
+
+* {
+  border-color: hsl(0 0% 18%);
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0 0% 5%);
+  color: hsl(0 0% 95%);
+  font-family: 'Raleway', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+::selection {
+  background: hsl(40 70% 50% / 0.3);
+  color: hsl(0 0% 95%);
+}
+
+.font-display {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.hero-overlay {
+  background: linear-gradient(
+    to bottom,
+    hsl(0 0% 5% / 0.7) 0%,
+    hsl(0 0% 5% / 0.3) 40%,
+    hsl(0 0% 5% / 0.85) 100%
+  );
+}
+
+.section-divider {
+  background: linear-gradient(90deg, transparent, hsl(40 70% 50% / 0.2), transparent);
+  height: 1px;
+}
+
+.grain-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 100;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 256px 256px;
+}
