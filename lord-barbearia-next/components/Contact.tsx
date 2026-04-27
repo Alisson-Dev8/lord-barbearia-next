@@ -73,7 +73,7 @@ export default function Contact() {
         >
           <iframe
             title="Localização Lord Barbearia"
-            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=R.+das+Balsas,+87+-+Conj.+Res.+Estrela+do+Sul,+Campo+Grande+-+MS,+79013-220&zoom=16"
+            src="https://www.google.com/maps?q=R.%20das%20Balsas%2C%2087%20-%20Conj.%20Res.%20Estrela%20do%20Sul%2C%20Campo%20Grande%20-%20MS%2C%2079013-220&z=16&output=embed"
             width="100%"
             height="300"
             style={{ border: 0, filter: "grayscale(1) invert(1) contrast(1.2) opacity(0.7)" }}
